@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta en Scribd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor-formulario">
+        <h1>Crear Cuenta</h1>
+        <form action="ruta_a_tu_servidor" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="confirm_password">Confirmar Contraseña:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+            
+            <button type="submit">Crear Cuenta</button>
+        </form>
+        <hr> <!-- Línea horizontal -->
+        <p>O</p>
+        <button id="google-signin" onclick="iniciarSesionConGoogle()">Continuar con Google</button>
+        <button id="apple-signin" onclick="iniciarSesionConApple()">Continuar con Apple</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
